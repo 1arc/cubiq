@@ -343,3 +343,55 @@ body {
 .ui__buttons {
   z-index: 5;
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-align: center;
+  width: 80%; /* Adjusted width */
+  max-width: 400px;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  size: 200%;
+  
+}
+
+.close-button:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+#downloadButton{
+  border-radius: 10px;
+  width: 140px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#downloadButton:hover{
+  background-color: #e0d1d1;
+  cursor: pointer;
+}
