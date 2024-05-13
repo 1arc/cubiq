@@ -4079,19 +4079,20 @@ class Game {
 window.version = '0.99.2';
 window.game = new Game();
 
-function isMobileOrTablet() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
+function isAndroid() {
+    return /Android/.test(navigator.userAgent);
+}
 
-  function showDownloadPopup() {
+function showDownloadPopup() {
     var popup = document.getElementById('downloadPopup');
     popup.style.display = 'block';
 
     document.getElementById('closeButton').addEventListener('click', function() {
-      popup.style.display = 'none';
+        popup.style.display = 'none';
     });
-  }
+}
 
-  if (isMobileOrTablet()) {
+if (isAndroid()) {
     showDownloadPopup();
-  }
+}
+
